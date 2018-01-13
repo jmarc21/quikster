@@ -1,0 +1,125 @@
+.nav{
+    height: 60vh;
+    width: 210px;
+    background-color: black;
+    opacity: .7;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    left: -220px;
+    transition: .7s;
+}
+.nav > div{
+    font-size: 36px;
+    margin: 20px 0px 0 40px;
+    color: silver;
+}
+.ham-menu2{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    align-items: center;
+}
+.ham-menu2 > div {
+    height: 5px;
+    width: 40px;
+    background-color: silver;
+    border-radius: 5px;
+    align-items: center;
+}
+.exit1{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 20px;
+}
+.exit2{
+    transform: rotate(135deg);
+    position: absolute;
+    top: 20px;
+}
+.nav .home{
+    margin-top: 100px;
+}
+.slide{
+    left: -10px;
+}
+.ham-menu{
+    height: 30px;
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.ham-menu > div {
+    height: 6px;
+    width: 40px;
+    background-color: black;
+    border-radius: 5px;
+    transition: .3s;
+}
+.links > div {
+    font-size: 36px;
+    margin: 5px 0 5px 0;
+}
+.home{
+    color: white; 
+    transition: .5s;
+    position: relative;
+}
+.home:hover{
+    color: wheat;
+}
+.shop{
+    color: white;
+    transition: .5s;
+    position: relative;
+}
+.shop:hover{
+    color: wheat;
+}
+.profile{
+    color: white;
+    transition: .5s;
+}
+.profile:hover{
+    color: wheat;
+}
+.spin45{
+    animation-name: x;
+    animation-duration: 1.2s;
+}
+.spin135{
+    animation-name: x135;
+    animation-duration: 1.2s;
+}
+
+.ham-menu:hover .line1{
+   margin-left: 10px;
+}
+.ham-menu:hover .line2{
+    margin-right: 8px;
+}
+.ham-menu:hover .line3{
+    margin-left: 12px;
+}
+@keyframes x135{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-45deg);
+    }
+}
+@keyframes x {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(45deg);
+    }
+}
