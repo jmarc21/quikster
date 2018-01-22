@@ -6,6 +6,7 @@ export default class Profile extends Component{
         return(
             <div className='profile'>
                 <h1 className='title'>Profile</h1>
+                
             </div>
         )
     }
